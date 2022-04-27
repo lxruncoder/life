@@ -1,1 +1,47 @@
-/* pages/home/home.wxss */
+/* 轮播 */
+.swiper-container {
+  height: 350rpx;
+}
+.swiper-container image {
+  width: 100%;
+}
+/* 九宫格 */
+.grid-container {
+  display: flex;
+  /* item设置了宽度之后,都会在一行显示,该配置项保证一行显示不下允许换行 */
+  flex-wrap: wrap;
+  border-left: 1rpx solid #ccc;
+  border-top: 1rpx solid #ccc;
+}
+.grid-item {
+  width: 33.33%;
+  height: 200rpx;
+  display: flex;
+  /* 设置为竖项对齐,纵轴 */
+  flex-direction: column;
+  /* 设置横向和纵向的居中 */
+  align-items: center;
+  justify-content: center;
+  border-right: 1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc;
+  /* 添加边框后掉下来了,所以改变盒子模型 */
+  box-sizing: border-box;
+}
+.grid-item image {
+  width: 60rpx;
+  height: 60rpx;
+}
+.grid-item text {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+}
+/* 底部图片 */
+.img-box {
+  padding: 20rpx 15rpx;
+  display: flex;
+  justify-content: space-around;
+}
+/* 给图片添加宽度之后,就不会紧挨着了, justify-content: space-around让其都有间隔*/
+.img-box image {
+  width: 45%;
+}
