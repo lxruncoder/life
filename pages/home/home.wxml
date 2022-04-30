@@ -7,10 +7,10 @@
 </swiper>
 <!-- 展示九宫格 -->
 <view class="grid-container">
-  <view class="grid-item" wx:for="{{gridList}}" wx:key="id">
+  <navigator class="grid-item" wx:for="{{gridList}}" wx:key="id" url="/pages/shoplist/shoplist?id={{item.id}}&title={{item.name}}">
     <image src="{{item.icon}}"></image>
     <text>{{item.name}}</text>
-  </view>
+  </navigator>
 </view>
 <!-- 底部图片 -->
 <view class="img-box">

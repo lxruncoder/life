@@ -1,0 +1,25 @@
+.shop-item {
+  display: flex;
+  padding: 12rpx;
+  margin: 12rpx;
+  border-radius: 8rpx;
+  border: 1rpx solid #cccccc;
+  box-shadow: 1rpx 1rpx 12rpx #dddddd;
+}
+.thumb {
+  margin-right: 12rpx;
+}
+.thumb image {
+  width: 250rpx;
+  height: 250rpx;
+  display: block;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 24rpx;
+}
+.shop-title {
+  font-weight:900
+}
